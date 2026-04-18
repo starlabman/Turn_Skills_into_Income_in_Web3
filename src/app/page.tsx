@@ -106,7 +106,7 @@ export default function Home() {
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [currentStep])
+  }, [currentStep, nextSlide, previousSlide, toggleTheme])
 
   const progress = ((currentStep + 1) / steps.length) * 100
 
@@ -459,7 +459,7 @@ export default function Home() {
               </header>
               <div className="space-y-6 sm:space-y-8">
                 <blockquote className="text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed pl-4 sm:pl-6 border-l-4" style={{ borderColor: 'rgb(var(--accent-rgb))', color: 'rgb(var(--foreground-rgb))' }}>
-                  In Web3, you don't apply. You participate.
+                  In Web3, you don&apos;t apply. You participate.
                 </blockquote>
                 <ul className="space-y-3 sm:space-y-4" role="list">
                   <li className="flex items-start gap-3" role="listitem">
@@ -476,7 +476,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <p className="text-lg sm:text-xl font-medium" style={{ color: 'rgb(var(--accent-rgb))' }}>
-                  Your location doesn't matter. Your output does.
+                  Your location doesn&apos;t matter. Your output does.
                 </p>
               </div>
             </article>
@@ -538,7 +538,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <blockquote className="text-sm sm:text-base font-semibold leading-relaxed pl-3 border-l-4" style={{ borderColor: 'rgb(var(--accent-rgb))', color: 'rgb(var(--foreground-rgb))' }}>
-                  Your location doesn't matter. Your output does.
+                  Your location doesn&apos;t matter. Your output does.
                 </blockquote>
               </div>
             </article>
